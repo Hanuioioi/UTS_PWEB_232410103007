@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agenda - Kabupaten Sidoarjo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #037509;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        nav a.active {
+            text-decoration: underline;
+            font-weight: 700;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            background-color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .agenda-item {
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
+        }
+        .agenda-item:last-child {
+            border-bottom: none;
+        }
+        .agenda-title {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.25rem;
+            color: #03070a;
+        }
+        .agenda-date {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        .agenda-description {
+            font-size: 1rem;
+            line-height: 1.4;
+            margin: 0;
+        }
+        footer {
+            background-color:#037509;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agenda Kabupaten Sidoarjo</h1>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="agenda.html" class="active">Agenda</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Agenda Kegiatan</h2>
+        <div class="agenda-item">
+            <h3 class="agenda-title">Rapat Koordinasi</h3>
+            <div class="agenda-date">10 Juli 2024</div>
+            <p class="agenda-description">Rapat koordinasi dengan seluruh kepala dinas untuk membahas program kerja tahun ini.</p>
+        </div>
+        <div class="agenda-item">
+            <h3 class="agenda-title">Peringatan Hari Kemerdekaan</h3>
+            <div class="agenda-date">17 Agustus 2024</div>
+            <p class="agenda-description">Acara peringatan hari kemerdekaan Republik Indonesia di alun-alun Sidoarjo.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Pemerintah Kabupaten Sidoarjo. All rights reserved.
